@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* font-family: 'Raleway', sans-serif; */
+
+/* Logofarbe: #666
+Logofarbe in hover: #333
+Menüfarbe: #333 
+Menüfarbe in hover: #337ab7 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 76px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+header nav {
+    display: flex;
+
+}
+
+header nav>a {
+    color: #666;
+    /* margin: 0 20vw; */
+    font-size: 30px;
+    margin: 0 10vw;
+}
+
+header nav>a:hover {
+    color: #333;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+header nav ul li {
+    margin: 0 2vw;
+}
+
+header nav ul li a {
+    color: #333;
+}
+
+header nav ul li a:hover {
+    color: #337ab7;
+}
