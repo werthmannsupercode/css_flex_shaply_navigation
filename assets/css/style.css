@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400&display=swap');
 
 /* font-family: 'Raleway', sans-serif; */
 
@@ -7,20 +7,30 @@ Logofarbe in hover: #333
 Menüfarbe: #333 
 Menüfarbe in hover: #337ab7 */
 
+
+/* =========================================================================
+                            GENERAL STYLES
+===========================================================================*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* =========================================================================
+                            HEADER STYLES
+===========================================================================*/
+
 header {
     height: 76px;
-    border-top: 1px solid #666;
     border-bottom: 1px solid #666;
     display: flex;
     font-family: 'Raleway', sans-serif;
     align-items: center;
-    /* justify-content: center; */
+    position: fixed;
+    background-color: white;
+    width: 100%;
 }
 
 header nav {
@@ -59,4 +69,71 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: #337ab7;
+}
+
+/* =========================================================================
+                            MAIN STYLES
+===========================================================================*/
+
+main section {
+    height: 100vh;
+    background-image: url('https://demo.colorlib.com/wp-content/uploads/sites/59/2016/03/photo-1443527216320-7e744084f5a7-1.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    flex-direction: column;
+    padding-top: 25vh;
+}
+
+main section h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 200;
+    word-spacing: 10px;
+}
+
+main section p {
+    color: white;
+    font-size: 14px;
+    padding: 4vh 0;
+}
+
+main section div {
+    display: flex;
+    width: 40vw;
+    justify-content: space-around;
+}
+
+main section a {
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+main section a:first-of-type {
+    background-color: rgb(112, 93, 240);
+    border: rgb(112, 93, 240);
+    color: white;
+
+}
+
+main section a:first-of-type:hover {
+    background-color: rgb(83, 70, 170);
+    border: rgb(83, 70, 170);
+    color: white;
+}
+
+main section a:last-of-type {
+    border: 1px solid white;
+    color: white;
+}
+
+main section a:last-of-type:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: black;
 }
